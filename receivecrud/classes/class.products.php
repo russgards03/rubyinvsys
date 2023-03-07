@@ -36,6 +36,20 @@ class Product{
 		return true;
 
 	}
+	
+	//Deleting a product
+	public function delete_product($id)
+	{
+		$sql = "DELETE FROM tbl_products WHERE product_id = :id";
+		$stmt = $this->conn->prepare($sql);
+		$stmt->bindParam(':id', $id);
+
+		if ($stmt->execute()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	//Updating a product
 	public function update_product($productname, $producttype, $productprice, $id){
