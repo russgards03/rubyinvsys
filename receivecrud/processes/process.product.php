@@ -5,11 +5,15 @@ $action = isset($_GET['action']) ? $_GET['action'] : '';
 
 switch($action){
 	case 'create':
-        create_new_product();
+        	create_new_product();
 	break;
-    case 'update':
-        update_product();
+    	case 'update':
+        	update_product();
 	break;
+	case 'delete':
+		delete_product();
+	break;
+		
 }
 
 function create_new_product(){
@@ -34,6 +38,21 @@ function update_product(){
     $result = $product->update_product($productname, $producttype, $productprice, $productid);
     if($result){
         header('location: ../index.php?page=usersproducts&subpage=products&action=profile&id='.$productid);
+    }
+}
+
+function delete_product(){
+    if (isset($_POST['product_id']) && is_numeric($_POST['product_id'])) {
+        $product = new Product();
+        $productid = $_POST['product_id'];
+        $result = $product->delete_product($productid);
+        if ($result) {
+            header('location: ../index.php?page=usersproducts&subpage=products&action=profile&id=');
+        } else {
+            echo "Error deleting product.";
+        }
+    } else {
+        echo "Invalid product ID.";
     }
 }
 
