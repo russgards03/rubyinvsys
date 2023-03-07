@@ -23,7 +23,11 @@
                 
         </div>
     </form> 
-
-
-
+    
+    <form action="processes/process.product.php?action=delete" method="POST">
+    <input type="hidden" name="product_id" value="<?php echo $id; ?>">
+    <div id="button-block">
+      <input type="submit" value="Delete Product">
+    </div>
+    </form>
 </div>
