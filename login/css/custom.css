@@ -1,0 +1,565 @@
+﻿html{ margin: 0; padding: 0;}
+
+body{
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    background-image: url('img/BG.png');
+    /*background-color: #141414;*/
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    object-fit: fill;
+}
+
+/*NAVIGATION==========================================================================================================*/
+
+#wrapnav
+{
+  margin: 0;
+  position: fixed;
+  height: 100%;
+}
+
+#navbar{
+  list-style-type: none;
+  width: 190px;
+  background-color: #d30303;
+  margin: 0px;
+  height: 100%;
+  padding: 0;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#bar{
+  margin-top: 100%;
+  list-style-type: none;
+  width: 190px;
+  background-color: #d30303;
+  height: 100%;
+  padding: 0;
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+#navbar a{
+  margin-top: 500px;
+  border-bottom: 1px #910909 solid;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0px;
+
+}
+
+#navbar a:hover{
+  background: #ffffff;
+  color: #000000;
+  border-right: 6px rgb(0, 201, 17) solid;
+}
+
+#wrapper{
+    float: right;
+    margin-right: 4%;
+    width: 77%;
+    min-height: 1000px;
+    padding:1px;
+    /*background-color: #d30303;*/
+}
+
+#wrap{
+  margin-left: 34%;
+  border-radius: 25px;
+  margin-top: 10%; 
+  width: 30%;
+  min-height: 400px;
+  background-color: #272727;
+
+}
+
+#header{
+    width: 98%;
+    height: 120px;
+    margin: 0 auto;
+}
+
+/*IMAGES =========================================================================================================*/
+
+#logo
+{
+    display: block;
+    float:left;
+    width: 264px;
+    height: 267px;
+    margin-left: 22%;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+}
+
+#logo2
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 264px;
+    height: 267px;
+    background-image: url('img/logo.png');
+    background-repeat: no-repeat;
+}
+
+#logo3
+{
+    width: 150px;
+    height: 150px;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-image: url('img/log.png');
+}
+
+/*IMAGE BUTTONS============================================================================================================*/
+
+#button
+{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    margin-top: 33%;
+    margin-left: 72%;
+    float: right;
+    background-repeat: no-repeat;
+    background-image: url('img/button.png');
+}
+
+#trash
+{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    margin-top: 33%;
+    margin-left: 72%;
+    float: right;
+    background-repeat: no-repeat;
+    background-image: url('img/trash.png');
+
+}
+
+#cancel
+{
+  margin-left: 51%;
+  width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-image: url('img/x.png');
+  position: absolute;
+}
+
+/* MENU ======================================================================================================*/
+
+#second-submenu{
+    height: 24px;
+    width: 98%;
+}
+#third-submenu
+{
+  color: #000;
+    height: 24px;
+    width: 98%;
+    text-align: left;
+}
+
+#menu a, #second-submenu a, #third-submenu a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+#menu a:hover, #second-submenu a:hover, #third-submenu a:hover{
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/*FONT CHANGES =====================================================================================================*/
+
+#black
+{
+  text-decoration: none;
+  color:#000;
+}
+
+#white
+{
+  text-decoration: solid;
+  text-decoration: none;
+  color:#ffffff;
+}
+
+/*FORM CONTENT =====================================================================================================*/
+.input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#form-block {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #000;
+  padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#form-block-right
+{
+  float: right;
+  width: 45%;
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 20px;
+}
+
+#form-block-left{
+  float: left;
+  width: 45%;
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 20px;
+}
+
+#form-block #form-block-half{
+    width: 45%;
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 20px;
+}
+#button-block{
+    background-color: #f2f2f2;
+    width: 95%;
+    padding: 20px;
+    text-align: right;
+}
+
+#garbage{
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-left: 106px;
+  width: 50px;
+  text-align: center;
+}
+
+#button-center{
+  margin-top: 5px;
+  border-radius: 5px;
+  margin-left: 106px;
+  width: 80%;
+  padding: px;
+  text-align: center;
+}
+
+#name{
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#content{
+  color: #ffffff;
+  width: 96%;
+  padding: 8px;
+  min-height: 1000px;
+  margin: 4px auto;
+  /*background-color: #141414;*/
+}
+#subcontent{
+  width: 98%;
+  padding: 4px;
+  float: left;
+}
+
+#login-block{
+  width: 30%;
+  height: 300px;
+  margin-right: 20%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  float: right;
+}
+
+#brand-block{
+  width: 40%;
+  height: 100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*TABLE ===============================================================================================================*/
+
+#table{
+  border: 1px solid;
+  word-wrap: break-word;
+  width: 70%;
+}
+
+#data-list {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#data-list td, #data-list th {
+  border-right: 3px solid #f4dac9;
+  border-top: 5px solid #f4dac9;
+  padding: 8px;
+}
+
+#data-list tr:nth-child(even)
+{
+  text-align: center;
+  color: #000;
+  background-color: #f0cda0;}
+
+#data-list tr:hover {background-color: #45b32f;}
+
+#data-list th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #d30303;
+  color: 141414;
+}
+
+/*PASSWORD VALIDATION ================================================================================================*/
+
+/* Style all input fields */
+input {
+  width: 30%;
+  padding: 4px;
+  border: 1px solid #ad0000;
+  border-radius: 4px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#inline
+{
+  display: inline;
+}
+
+
+#message p {
+  padding: 10px 35px;
+  font-size: 12px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+}
+
+/* The Modal (background) =================================================================================================*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#error_notif {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  margin: 0 auto;
+  z-index: 999999999;
+}
+
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .confirmbtn, .submitbtn  {
+  float: right;
+  width: 30%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.confirmbtn {
+  background-color: #f44336;
+}
+.btn-jsactive{
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Add a color to the delete button */
+.submitbtn {
+  background-color: #04AA6D;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: left;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255,255,255,70%);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 4px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .confirmbtn, .submitbtn {
+    width: 100%;
+  }
+}
+.btn-box{
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+#receive-details table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.info-text{
+  font-weight: bold;
+}
+/*tr:nth-child(even){background-color: #f2f2f2}*/
+.tmbnail{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 60px;
+}
+.tmbnail:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
